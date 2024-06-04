@@ -1,11 +1,9 @@
-# This repo analyses and plots KuKa radar waveforms
+# Code and data to produce radar-related analysis and plots from Willatt et al. (In Review)
 
-The code works from NetCDF files (nc files), which must be generated from the raw data using KuKaPy. The nc files should be placed in the data/kuka/required directory.
+The code is contained in a single jupyter notebook contained in /notebooks/main.ipynb
 
-Because nc files are generated whenever the radar is running, there's a lot of data and we're only interested in a tiny bit of it. Specifically, we're only interested in data from each antenna when that antenna is pointing at the snow pit. The information about when that's happening was written in my notebook, and I've transcribed it into dictionaries within notebooks/pit_info.ipynb. Run this notebook first - it generates a pickle file of this information that you'll need later.
+It calls specialised Python functions from /notebooks/utils.py
 
-To make what I anticipate will be Figure 2, run notebooks/make_pit_plots.ipynb
-
-<p align="center">
-  <img src="figures/all_pits.jpg" width="550" title="Tentative Figure 2">
-</p>
+The raw (binary) KuKa data is stored in /data/kuka/raw
+The processed netcdf files are in /data/kuka/required
+The snow geopyhysical data are in /data/geophys
