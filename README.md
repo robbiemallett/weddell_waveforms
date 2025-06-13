@@ -1,6 +1,6 @@
-# Code and data to produce radar-related analysis and plots from Willatt et al. (In Review)
+# Code and data to produce radar-related analysis and plots from Willatt et al. (Accepted, Geophysical Research Letters)
 
-The code is contained in a single jupyter notebook contained in /notebooks/main.ipynb
+The code is contained in a single jupyter notebook contained in /notebooks/main-paper_v3.ipynb
 
 It calls specialised Python functions from /notebooks/utils.py
 
